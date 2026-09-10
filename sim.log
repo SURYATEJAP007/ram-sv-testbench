@@ -1,0 +1,436 @@
+# vsim -c -coverage -assertdebug work.top -l sim.log -do "add wave -r /*; run -all; coverage report -details -output coverage_report.txt; assertion report -recursive -file assertion_report.txt; coverage save ram_cov.ucdb; quit " 
+# Start time: 12:13:18 on Sep 10,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt8
+# Loading sv_std.std
+# Loading work.testbench_ram_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ram_assertions(fast)
+# Loading work.ram_interface(fast)
+# ** Warning: (vsim-8492) The -assertdebug option was specified but there are no accessible objects.
+# add wave -r /*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: User  Hostname: DESKTOP-ISVNG93  ProcessID: 4868
+#           Attempting to use alternate WLF file "./wlftf6a5nq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftf6a5nq
+#  run -all
+# [generated[          0]] wr_en=0 rd_en=0 addr=0011 wr_data=10111000
+# [generated[          1]] wr_en=1 rd_en=0 addr=1101 wr_data=00001010
+# [generated[          2]] wr_en=0 rd_en=1 addr=0110 wr_data=01111100
+# [generated[          3]] wr_en=0 rd_en=1 addr=0011 wr_data=00001010
+# [generated[          4]] wr_en=0 rd_en=0 addr=0110 wr_data=11011111
+# [generated[          5]] wr_en=1 rd_en=0 addr=0100 wr_data=00111110
+# [generated[          6]] wr_en=1 rd_en=0 addr=0100 wr_data=00010011
+# [generated[          7]] wr_en=1 rd_en=0 addr=1000 wr_data=10100100
+# [generated[          8]] wr_en=1 rd_en=0 addr=0000 wr_data=01011100
+# [generated[          9]] wr_en=1 rd_en=0 addr=0001 wr_data=01011001
+# [generated[         10]] wr_en=0 rd_en=1 addr=1010 wr_data=01110011
+# [generated[         11]] wr_en=1 rd_en=0 addr=1001 wr_data=11100010
+# [generated[         12]] wr_en=0 rd_en=0 addr=1101 wr_data=01010000
+# [generated[         13]] wr_en=0 rd_en=1 addr=1000 wr_data=10000000
+# [generated[         14]] wr_en=1 rd_en=0 addr=1111 wr_data=11011011
+# [generated[         15]] wr_en=0 rd_en=0 addr=1011 wr_data=01000110
+# [generated[         16]] wr_en=1 rd_en=0 addr=0001 wr_data=10011100
+# [generated[         17]] wr_en=0 rd_en=1 addr=1001 wr_data=01010011
+# [generated[         18]] wr_en=1 rd_en=0 addr=1001 wr_data=00111011
+# [generated[         19]] wr_en=0 rd_en=0 addr=1000 wr_data=01110110
+# [generated[         20]] wr_en=1 rd_en=0 addr=0110 wr_data=10000110
+# [generated[         21]] wr_en=1 rd_en=0 addr=0100 wr_data=10100101
+# [generated[         22]] wr_en=0 rd_en=0 addr=1100 wr_data=01000111
+# [generated[         23]] wr_en=1 rd_en=0 addr=1010 wr_data=11110000
+# [generated[         24]] wr_en=0 rd_en=1 addr=1001 wr_data=01111010
+# [generated[         25]] wr_en=0 rd_en=1 addr=0101 wr_data=11111011
+# [generated[         26]] wr_en=0 rd_en=1 addr=1110 wr_data=10011110
+# [generated[         27]] wr_en=0 rd_en=1 addr=0001 wr_data=01111100
+# [generated[         28]] wr_en=1 rd_en=0 addr=1001 wr_data=00000011
+# [generated[         29]] wr_en=0 rd_en=0 addr=0110 wr_data=11111101
+# [generated[         30]] wr_en=1 rd_en=0 addr=0111 wr_data=10011111
+# [generated[         31]] wr_en=0 rd_en=1 addr=1100 wr_data=10100000
+# [generated[         32]] wr_en=0 rd_en=1 addr=1110 wr_data=11011110
+# [generated[         33]] wr_en=1 rd_en=0 addr=0011 wr_data=00100001
+# [generated[         34]] wr_en=1 rd_en=0 addr=1101 wr_data=11010111
+# [generated[         35]] wr_en=0 rd_en=0 addr=1011 wr_data=11100011
+# [generated[         36]] wr_en=1 rd_en=0 addr=1100 wr_data=10010110
+# [generated[         37]] wr_en=0 rd_en=0 addr=0011 wr_data=00100010
+# [generated[         38]] wr_en=0 rd_en=1 addr=1011 wr_data=10100111
+# [generated[         39]] wr_en=0 rd_en=1 addr=1000 wr_data=11110111
+# [generated[         40]] wr_en=0 rd_en=1 addr=0101 wr_data=11100010
+# [generated[         41]] wr_en=0 rd_en=1 addr=0001 wr_data=11110010
+# [generated[         42]] wr_en=0 rd_en=0 addr=1010 wr_data=00001010
+# [generated[         43]] wr_en=0 rd_en=1 addr=0100 wr_data=11010001
+# [generated[         44]] wr_en=1 rd_en=0 addr=1010 wr_data=10001000
+# [generated[         45]] wr_en=1 rd_en=0 addr=1010 wr_data=01000100
+# [generated[         46]] wr_en=1 rd_en=0 addr=1000 wr_data=10010101
+# [generated[         47]] wr_en=0 rd_en=0 addr=1011 wr_data=11111001
+# [generated[         48]] wr_en=0 rd_en=1 addr=1011 wr_data=00011010
+# [generated[         49]] wr_en=1 rd_en=0 addr=1011 wr_data=10100111
+# [generated[         50]] wr_en=1 rd_en=0 addr=1010 wr_data=11110001
+# [generated[         51]] wr_en=0 rd_en=1 addr=1100 wr_data=01010001
+# [generated[         52]] wr_en=1 rd_en=0 addr=1010 wr_data=11000011
+# [generated[         53]] wr_en=0 rd_en=1 addr=1111 wr_data=11100101
+# [generated[         54]] wr_en=1 rd_en=0 addr=0110 wr_data=01100110
+# [generated[         55]] wr_en=0 rd_en=1 addr=1011 wr_data=10000111
+# [generated[         56]] wr_en=0 rd_en=1 addr=1011 wr_data=11000000
+# [generated[         57]] wr_en=0 rd_en=1 addr=0111 wr_data=10100100
+# [generated[         58]] wr_en=1 rd_en=0 addr=0011 wr_data=00010101
+# [generated[         59]] wr_en=0 rd_en=1 addr=0011 wr_data=01100110
+# [generated[         60]] wr_en=0 rd_en=1 addr=0000 wr_data=10101010
+# [generated[         61]] wr_en=0 rd_en=0 addr=1011 wr_data=00100100
+# [generated[         62]] wr_en=0 rd_en=1 addr=1010 wr_data=00110000
+# [generated[         63]] wr_en=0 rd_en=1 addr=0110 wr_data=01101100
+# [generated[         64]] wr_en=0 rd_en=1 addr=0100 wr_data=11000110
+# [generated[         65]] wr_en=1 rd_en=0 addr=1101 wr_data=01000010
+# [generated[         66]] wr_en=0 rd_en=1 addr=1100 wr_data=10111111
+# [generated[         67]] wr_en=1 rd_en=0 addr=0011 wr_data=10010001
+# [generated[         68]] wr_en=0 rd_en=1 addr=0010 wr_data=01101100
+# [generated[         69]] wr_en=1 rd_en=0 addr=0110 wr_data=00100001
+# [generated[         70]] wr_en=1 rd_en=0 addr=1110 wr_data=10111010
+# [generated[         71]] wr_en=0 rd_en=1 addr=0010 wr_data=10010101
+# [generated[         72]] wr_en=0 rd_en=1 addr=0000 wr_data=11111111
+# [generated[         73]] wr_en=1 rd_en=0 addr=1000 wr_data=11011111
+# [generated[         74]] wr_en=0 rd_en=0 addr=1101 wr_data=00010101
+# [generated[         75]] wr_en=0 rd_en=1 addr=0100 wr_data=00001110
+# [generated[         76]] wr_en=0 rd_en=0 addr=1110 wr_data=11001011
+# [generated[         77]] wr_en=1 rd_en=0 addr=0010 wr_data=11101011
+# [generated[         78]] wr_en=1 rd_en=0 addr=0100 wr_data=00101010
+# [generated[         79]] wr_en=0 rd_en=1 addr=1101 wr_data=10011010
+# [generated[         80]] wr_en=0 rd_en=1 addr=0010 wr_data=00110001
+# [generated[         81]] wr_en=0 rd_en=0 addr=1010 wr_data=11001101
+# [generated[         82]] wr_en=0 rd_en=1 addr=1110 wr_data=00010111
+# [generated[         83]] wr_en=1 rd_en=0 addr=1110 wr_data=01011010
+# [generated[         84]] wr_en=1 rd_en=0 addr=0011 wr_data=10110100
+# [generated[         85]] wr_en=0 rd_en=0 addr=1110 wr_data=01011100
+# [generated[         86]] wr_en=0 rd_en=1 addr=0000 wr_data=00000100
+# [generated[         87]] wr_en=1 rd_en=0 addr=1110 wr_data=11011010
+# [generated[         88]] wr_en=0 rd_en=0 addr=1110 wr_data=00100110
+# [generated[         89]] wr_en=0 rd_en=1 addr=0000 wr_data=10000101
+# [generated[         90]] wr_en=0 rd_en=1 addr=0001 wr_data=10000010
+# [generated[         91]] wr_en=0 rd_en=0 addr=0100 wr_data=00011011
+# [generated[         92]] wr_en=0 rd_en=1 addr=1011 wr_data=01101001
+# [generated[         93]] wr_en=0 rd_en=1 addr=0001 wr_data=00100001
+# [generated[         94]] wr_en=0 rd_en=1 addr=0110 wr_data=00100100
+# [generated[         95]] wr_en=0 rd_en=1 addr=0011 wr_data=10011101
+# [generated[         96]] wr_en=0 rd_en=1 addr=0101 wr_data=01110111
+# [generated[         97]] wr_en=0 rd_en=1 addr=1111 wr_data=00111010
+# [generated[         98]] wr_en=1 rd_en=0 addr=0001 wr_data=01000100
+# [generated[         99]] wr_en=0 rd_en=0 addr=1000 wr_data=00100010
+# [monitoring the signal of transaction           0] wr_en=0 rd_en=0 addr=0000 wr_data=00000000
+# no operation founded
+# [received the current transaction           0] wr_en=0 rd_en=0 addr=0011 wr_data=10111000
+# [monitoring the signal of transaction           1] wr_en=0 rd_en=0 addr=0000 wr_data=00000000
+# no operation founded
+# [received the current transaction           1] wr_en=1 rd_en=0 addr=1101 wr_data=00001010
+# [monitoring the signal of transaction           2] wr_en=0 rd_en=0 addr=0011 wr_data=10111000
+# no operation founded
+# [received the current transaction           2] wr_en=0 rd_en=1 addr=0110 wr_data=01111100
+# [monitoring the signal of transaction           3] wr_en=1 rd_en=0 addr=1101 wr_data=00001010
+# [model updated: wrote 10 to addr 13] wr_en=1 rd_en=0 addr=1101 wr_data=00001010
+# [received the current transaction           3] wr_en=0 rd_en=1 addr=0011 wr_data=00001010
+# [monitoring the signal of transaction           4] wr_en=0 rd_en=1 addr=0110 wr_data=01111100
+# PASS; din is 01111100 ,expected was 00000000, actual was 00000000
+# [received the current transaction           4] wr_en=0 rd_en=0 addr=0110 wr_data=11011111
+# [monitoring the signal of transaction           5] wr_en=0 rd_en=1 addr=0011 wr_data=00001010
+# PASS; din is 00001010 ,expected was 00000000, actual was 00000000
+# [received the current transaction           5] wr_en=1 rd_en=0 addr=0100 wr_data=00111110
+# [monitoring the signal of transaction           6] wr_en=0 rd_en=0 addr=0110 wr_data=11011111
+# no operation founded
+# [received the current transaction           6] wr_en=1 rd_en=0 addr=0100 wr_data=00010011
+# [monitoring the signal of transaction           7] wr_en=1 rd_en=0 addr=0100 wr_data=00111110
+# [model updated: wrote 62 to addr 4] wr_en=1 rd_en=0 addr=0100 wr_data=00111110
+# [received the current transaction           7] wr_en=1 rd_en=0 addr=1000 wr_data=10100100
+# [monitoring the signal of transaction           8] wr_en=1 rd_en=0 addr=0100 wr_data=00010011
+# [model updated: wrote 19 to addr 4] wr_en=1 rd_en=0 addr=0100 wr_data=00010011
+# [received the current transaction           8] wr_en=1 rd_en=0 addr=0000 wr_data=01011100
+# [monitoring the signal of transaction           9] wr_en=1 rd_en=0 addr=1000 wr_data=10100100
+# [model updated: wrote 164 to addr 8] wr_en=1 rd_en=0 addr=1000 wr_data=10100100
+# [received the current transaction           9] wr_en=1 rd_en=0 addr=0001 wr_data=01011001
+# [monitoring the signal of transaction          10] wr_en=1 rd_en=0 addr=0000 wr_data=01011100
+# [model updated: wrote 92 to addr 0] wr_en=1 rd_en=0 addr=0000 wr_data=01011100
+# [received the current transaction          10] wr_en=0 rd_en=1 addr=1010 wr_data=01110011
+# [monitoring the signal of transaction          11] wr_en=1 rd_en=0 addr=0001 wr_data=01011001
+# [model updated: wrote 89 to addr 1] wr_en=1 rd_en=0 addr=0001 wr_data=01011001
+# [received the current transaction          11] wr_en=1 rd_en=0 addr=1001 wr_data=11100010
+# [monitoring the signal of transaction          12] wr_en=0 rd_en=1 addr=1010 wr_data=01110011
+# PASS; din is 01110011 ,expected was 00000000, actual was 00000000
+# [received the current transaction          12] wr_en=0 rd_en=0 addr=1101 wr_data=01010000
+# [monitoring the signal of transaction          13] wr_en=1 rd_en=0 addr=1001 wr_data=11100010
+# [model updated: wrote 226 to addr 9] wr_en=1 rd_en=0 addr=1001 wr_data=11100010
+# [received the current transaction          13] wr_en=0 rd_en=1 addr=1000 wr_data=10000000
+# [monitoring the signal of transaction          14] wr_en=0 rd_en=0 addr=1101 wr_data=01010000
+# no operation founded
+# [received the current transaction          14] wr_en=1 rd_en=0 addr=1111 wr_data=11011011
+# [monitoring the signal of transaction          15] wr_en=0 rd_en=1 addr=1000 wr_data=10000000
+# PASS; din is 10000000 ,expected was 10100100, actual was 10100100
+# [received the current transaction          15] wr_en=0 rd_en=0 addr=1011 wr_data=01000110
+# [monitoring the signal of transaction          16] wr_en=1 rd_en=0 addr=1111 wr_data=11011011
+# [model updated: wrote 219 to addr 15] wr_en=1 rd_en=0 addr=1111 wr_data=11011011
+# [received the current transaction          16] wr_en=1 rd_en=0 addr=0001 wr_data=10011100
+# [monitoring the signal of transaction          17] wr_en=0 rd_en=0 addr=1011 wr_data=01000110
+# no operation founded
+# [received the current transaction          17] wr_en=0 rd_en=1 addr=1001 wr_data=01010011
+# [monitoring the signal of transaction          18] wr_en=1 rd_en=0 addr=0001 wr_data=10011100
+# [model updated: wrote 156 to addr 1] wr_en=1 rd_en=0 addr=0001 wr_data=10011100
+# [received the current transaction          18] wr_en=1 rd_en=0 addr=1001 wr_data=00111011
+# [monitoring the signal of transaction          19] wr_en=0 rd_en=1 addr=1001 wr_data=01010011
+# PASS; din is 01010011 ,expected was 11100010, actual was 11100010
+# [received the current transaction          19] wr_en=0 rd_en=0 addr=1000 wr_data=01110110
+# [monitoring the signal of transaction          20] wr_en=1 rd_en=0 addr=1001 wr_data=00111011
+# [model updated: wrote 59 to addr 9] wr_en=1 rd_en=0 addr=1001 wr_data=00111011
+# [received the current transaction          20] wr_en=1 rd_en=0 addr=0110 wr_data=10000110
+# [monitoring the signal of transaction          21] wr_en=0 rd_en=0 addr=1000 wr_data=01110110
+# no operation founded
+# [received the current transaction          21] wr_en=1 rd_en=0 addr=0100 wr_data=10100101
+# [monitoring the signal of transaction          22] wr_en=1 rd_en=0 addr=0110 wr_data=10000110
+# [model updated: wrote 134 to addr 6] wr_en=1 rd_en=0 addr=0110 wr_data=10000110
+# [received the current transaction          22] wr_en=0 rd_en=0 addr=1100 wr_data=01000111
+# [monitoring the signal of transaction          23] wr_en=1 rd_en=0 addr=0100 wr_data=10100101
+# [model updated: wrote 165 to addr 4] wr_en=1 rd_en=0 addr=0100 wr_data=10100101
+# [received the current transaction          23] wr_en=1 rd_en=0 addr=1010 wr_data=11110000
+# [monitoring the signal of transaction          24] wr_en=0 rd_en=0 addr=1100 wr_data=01000111
+# no operation founded
+# [received the current transaction          24] wr_en=0 rd_en=1 addr=1001 wr_data=01111010
+# [monitoring the signal of transaction          25] wr_en=1 rd_en=0 addr=1010 wr_data=11110000
+# [model updated: wrote 240 to addr 10] wr_en=1 rd_en=0 addr=1010 wr_data=11110000
+# [received the current transaction          25] wr_en=0 rd_en=1 addr=0101 wr_data=11111011
+# [monitoring the signal of transaction          26] wr_en=0 rd_en=1 addr=1001 wr_data=01111010
+# PASS; din is 01111010 ,expected was 00111011, actual was 00111011
+# [received the current transaction          26] wr_en=0 rd_en=1 addr=1110 wr_data=10011110
+# [monitoring the signal of transaction          27] wr_en=0 rd_en=1 addr=0101 wr_data=11111011
+# PASS; din is 11111011 ,expected was 00000000, actual was 00000000
+# [received the current transaction          27] wr_en=0 rd_en=1 addr=0001 wr_data=01111100
+# [monitoring the signal of transaction          28] wr_en=0 rd_en=1 addr=1110 wr_data=10011110
+# PASS; din is 10011110 ,expected was 00000000, actual was 00000000
+# [received the current transaction          28] wr_en=1 rd_en=0 addr=1001 wr_data=00000011
+# [monitoring the signal of transaction          29] wr_en=0 rd_en=1 addr=0001 wr_data=01111100
+# PASS; din is 01111100 ,expected was 10011100, actual was 10011100
+# [received the current transaction          29] wr_en=0 rd_en=0 addr=0110 wr_data=11111101
+# [monitoring the signal of transaction          30] wr_en=1 rd_en=0 addr=1001 wr_data=00000011
+# [model updated: wrote 3 to addr 9] wr_en=1 rd_en=0 addr=1001 wr_data=00000011
+# [received the current transaction          30] wr_en=1 rd_en=0 addr=0111 wr_data=10011111
+# [monitoring the signal of transaction          31] wr_en=0 rd_en=0 addr=0110 wr_data=11111101
+# no operation founded
+# [received the current transaction          31] wr_en=0 rd_en=1 addr=1100 wr_data=10100000
+# [monitoring the signal of transaction          32] wr_en=1 rd_en=0 addr=0111 wr_data=10011111
+# [model updated: wrote 159 to addr 7] wr_en=1 rd_en=0 addr=0111 wr_data=10011111
+# [received the current transaction          32] wr_en=0 rd_en=1 addr=1110 wr_data=11011110
+# [monitoring the signal of transaction          33] wr_en=0 rd_en=1 addr=1100 wr_data=10100000
+# PASS; din is 10100000 ,expected was 00000000, actual was 00000000
+# [received the current transaction          33] wr_en=1 rd_en=0 addr=0011 wr_data=00100001
+# [monitoring the signal of transaction          34] wr_en=0 rd_en=1 addr=1110 wr_data=11011110
+# PASS; din is 11011110 ,expected was 00000000, actual was 00000000
+# [received the current transaction          34] wr_en=1 rd_en=0 addr=1101 wr_data=11010111
+# [monitoring the signal of transaction          35] wr_en=1 rd_en=0 addr=0011 wr_data=00100001
+# [model updated: wrote 33 to addr 3] wr_en=1 rd_en=0 addr=0011 wr_data=00100001
+# [received the current transaction          35] wr_en=0 rd_en=0 addr=1011 wr_data=11100011
+# [monitoring the signal of transaction          36] wr_en=1 rd_en=0 addr=1101 wr_data=11010111
+# [model updated: wrote 215 to addr 13] wr_en=1 rd_en=0 addr=1101 wr_data=11010111
+# [received the current transaction          36] wr_en=1 rd_en=0 addr=1100 wr_data=10010110
+# [monitoring the signal of transaction          37] wr_en=0 rd_en=0 addr=1011 wr_data=11100011
+# no operation founded
+# [received the current transaction          37] wr_en=0 rd_en=0 addr=0011 wr_data=00100010
+# [monitoring the signal of transaction          38] wr_en=1 rd_en=0 addr=1100 wr_data=10010110
+# [model updated: wrote 150 to addr 12] wr_en=1 rd_en=0 addr=1100 wr_data=10010110
+# [received the current transaction          38] wr_en=0 rd_en=1 addr=1011 wr_data=10100111
+# [monitoring the signal of transaction          39] wr_en=0 rd_en=0 addr=0011 wr_data=00100010
+# no operation founded
+# [received the current transaction          39] wr_en=0 rd_en=1 addr=1000 wr_data=11110111
+# [monitoring the signal of transaction          40] wr_en=0 rd_en=1 addr=1011 wr_data=10100111
+# PASS; din is 10100111 ,expected was 00000000, actual was 00000000
+# [received the current transaction          40] wr_en=0 rd_en=1 addr=0101 wr_data=11100010
+# [monitoring the signal of transaction          41] wr_en=0 rd_en=1 addr=1000 wr_data=11110111
+# PASS; din is 11110111 ,expected was 10100100, actual was 10100100
+# [received the current transaction          41] wr_en=0 rd_en=1 addr=0001 wr_data=11110010
+# [monitoring the signal of transaction          42] wr_en=0 rd_en=1 addr=0101 wr_data=11100010
+# PASS; din is 11100010 ,expected was 00000000, actual was 00000000
+# [received the current transaction          42] wr_en=0 rd_en=0 addr=1010 wr_data=00001010
+# [monitoring the signal of transaction          43] wr_en=0 rd_en=1 addr=0001 wr_data=11110010
+# PASS; din is 11110010 ,expected was 10011100, actual was 10011100
+# [received the current transaction          43] wr_en=0 rd_en=1 addr=0100 wr_data=11010001
+# [monitoring the signal of transaction          44] wr_en=0 rd_en=0 addr=1010 wr_data=00001010
+# no operation founded
+# [received the current transaction          44] wr_en=1 rd_en=0 addr=1010 wr_data=10001000
+# [monitoring the signal of transaction          45] wr_en=0 rd_en=1 addr=0100 wr_data=11010001
+# PASS; din is 11010001 ,expected was 10100101, actual was 10100101
+# [received the current transaction          45] wr_en=1 rd_en=0 addr=1010 wr_data=01000100
+# [monitoring the signal of transaction          46] wr_en=1 rd_en=0 addr=1010 wr_data=10001000
+# [model updated: wrote 136 to addr 10] wr_en=1 rd_en=0 addr=1010 wr_data=10001000
+# [received the current transaction          46] wr_en=1 rd_en=0 addr=1000 wr_data=10010101
+# [monitoring the signal of transaction          47] wr_en=1 rd_en=0 addr=1010 wr_data=01000100
+# [model updated: wrote 68 to addr 10] wr_en=1 rd_en=0 addr=1010 wr_data=01000100
+# [received the current transaction          47] wr_en=0 rd_en=0 addr=1011 wr_data=11111001
+# [monitoring the signal of transaction          48] wr_en=1 rd_en=0 addr=1000 wr_data=10010101
+# [model updated: wrote 149 to addr 8] wr_en=1 rd_en=0 addr=1000 wr_data=10010101
+# [received the current transaction          48] wr_en=0 rd_en=1 addr=1011 wr_data=00011010
+# [monitoring the signal of transaction          49] wr_en=0 rd_en=0 addr=1011 wr_data=11111001
+# no operation founded
+# [received the current transaction          49] wr_en=1 rd_en=0 addr=1011 wr_data=10100111
+# [monitoring the signal of transaction          50] wr_en=0 rd_en=1 addr=1011 wr_data=00011010
+# PASS; din is 00011010 ,expected was 00000000, actual was 00000000
+# [received the current transaction          50] wr_en=1 rd_en=0 addr=1010 wr_data=11110001
+# [monitoring the signal of transaction          51] wr_en=1 rd_en=0 addr=1011 wr_data=10100111
+# [model updated: wrote 167 to addr 11] wr_en=1 rd_en=0 addr=1011 wr_data=10100111
+# [received the current transaction          51] wr_en=0 rd_en=1 addr=1100 wr_data=01010001
+# [monitoring the signal of transaction          52] wr_en=1 rd_en=0 addr=1010 wr_data=11110001
+# [model updated: wrote 241 to addr 10] wr_en=1 rd_en=0 addr=1010 wr_data=11110001
+# [received the current transaction          52] wr_en=1 rd_en=0 addr=1010 wr_data=11000011
+# [monitoring the signal of transaction          53] wr_en=0 rd_en=1 addr=1100 wr_data=01010001
+# PASS; din is 01010001 ,expected was 10010110, actual was 10010110
+# [received the current transaction          53] wr_en=0 rd_en=1 addr=1111 wr_data=11100101
+# [monitoring the signal of transaction          54] wr_en=1 rd_en=0 addr=1010 wr_data=11000011
+# [model updated: wrote 195 to addr 10] wr_en=1 rd_en=0 addr=1010 wr_data=11000011
+# [received the current transaction          54] wr_en=1 rd_en=0 addr=0110 wr_data=01100110
+# [monitoring the signal of transaction          55] wr_en=0 rd_en=1 addr=1111 wr_data=11100101
+# PASS; din is 11100101 ,expected was 11011011, actual was 11011011
+# [received the current transaction          55] wr_en=0 rd_en=1 addr=1011 wr_data=10000111
+# [monitoring the signal of transaction          56] wr_en=1 rd_en=0 addr=0110 wr_data=01100110
+# [model updated: wrote 102 to addr 6] wr_en=1 rd_en=0 addr=0110 wr_data=01100110
+# [received the current transaction          56] wr_en=0 rd_en=1 addr=1011 wr_data=11000000
+# [monitoring the signal of transaction          57] wr_en=0 rd_en=1 addr=1011 wr_data=10000111
+# PASS; din is 10000111 ,expected was 10100111, actual was 10100111
+# [received the current transaction          57] wr_en=0 rd_en=1 addr=0111 wr_data=10100100
+# [monitoring the signal of transaction          58] wr_en=0 rd_en=1 addr=1011 wr_data=11000000
+# PASS; din is 11000000 ,expected was 10100111, actual was 10100111
+# [received the current transaction          58] wr_en=1 rd_en=0 addr=0011 wr_data=00010101
+# [monitoring the signal of transaction          59] wr_en=0 rd_en=1 addr=0111 wr_data=10100100
+# PASS; din is 10100100 ,expected was 10011111, actual was 10011111
+# [received the current transaction          59] wr_en=0 rd_en=1 addr=0011 wr_data=01100110
+# [monitoring the signal of transaction          60] wr_en=1 rd_en=0 addr=0011 wr_data=00010101
+# [model updated: wrote 21 to addr 3] wr_en=1 rd_en=0 addr=0011 wr_data=00010101
+# [received the current transaction          60] wr_en=0 rd_en=1 addr=0000 wr_data=10101010
+# [monitoring the signal of transaction          61] wr_en=0 rd_en=1 addr=0011 wr_data=01100110
+# PASS; din is 01100110 ,expected was 00010101, actual was 00010101
+# [received the current transaction          61] wr_en=0 rd_en=0 addr=1011 wr_data=00100100
+# [monitoring the signal of transaction          62] wr_en=0 rd_en=1 addr=0000 wr_data=10101010
+# PASS; din is 10101010 ,expected was 01011100, actual was 01011100
+# [received the current transaction          62] wr_en=0 rd_en=1 addr=1010 wr_data=00110000
+# [monitoring the signal of transaction          63] wr_en=0 rd_en=0 addr=1011 wr_data=00100100
+# no operation founded
+# [received the current transaction          63] wr_en=0 rd_en=1 addr=0110 wr_data=01101100
+# [monitoring the signal of transaction          64] wr_en=0 rd_en=1 addr=1010 wr_data=00110000
+# PASS; din is 00110000 ,expected was 11000011, actual was 11000011
+# [received the current transaction          64] wr_en=0 rd_en=1 addr=0100 wr_data=11000110
+# [monitoring the signal of transaction          65] wr_en=0 rd_en=1 addr=0110 wr_data=01101100
+# PASS; din is 01101100 ,expected was 01100110, actual was 01100110
+# [received the current transaction          65] wr_en=1 rd_en=0 addr=1101 wr_data=01000010
+# [monitoring the signal of transaction          66] wr_en=0 rd_en=1 addr=0100 wr_data=11000110
+# PASS; din is 11000110 ,expected was 10100101, actual was 10100101
+# [received the current transaction          66] wr_en=0 rd_en=1 addr=1100 wr_data=10111111
+# [monitoring the signal of transaction          67] wr_en=1 rd_en=0 addr=1101 wr_data=01000010
+# [model updated: wrote 66 to addr 13] wr_en=1 rd_en=0 addr=1101 wr_data=01000010
+# [received the current transaction          67] wr_en=1 rd_en=0 addr=0011 wr_data=10010001
+# [monitoring the signal of transaction          68] wr_en=0 rd_en=1 addr=1100 wr_data=10111111
+# PASS; din is 10111111 ,expected was 10010110, actual was 10010110
+# [received the current transaction          68] wr_en=0 rd_en=1 addr=0010 wr_data=01101100
+# [monitoring the signal of transaction          69] wr_en=1 rd_en=0 addr=0011 wr_data=10010001
+# [model updated: wrote 145 to addr 3] wr_en=1 rd_en=0 addr=0011 wr_data=10010001
+# [received the current transaction          69] wr_en=1 rd_en=0 addr=0110 wr_data=00100001
+# [monitoring the signal of transaction          70] wr_en=0 rd_en=1 addr=0010 wr_data=01101100
+# PASS; din is 01101100 ,expected was 00000000, actual was 00000000
+# [received the current transaction          70] wr_en=1 rd_en=0 addr=1110 wr_data=10111010
+# [monitoring the signal of transaction          71] wr_en=1 rd_en=0 addr=0110 wr_data=00100001
+# [model updated: wrote 33 to addr 6] wr_en=1 rd_en=0 addr=0110 wr_data=00100001
+# [received the current transaction          71] wr_en=0 rd_en=1 addr=0010 wr_data=10010101
+# [monitoring the signal of transaction          72] wr_en=1 rd_en=0 addr=1110 wr_data=10111010
+# [model updated: wrote 186 to addr 14] wr_en=1 rd_en=0 addr=1110 wr_data=10111010
+# [received the current transaction          72] wr_en=0 rd_en=1 addr=0000 wr_data=11111111
+# [monitoring the signal of transaction          73] wr_en=0 rd_en=1 addr=0010 wr_data=10010101
+# PASS; din is 10010101 ,expected was 00000000, actual was 00000000
+# [received the current transaction          73] wr_en=1 rd_en=0 addr=1000 wr_data=11011111
+# [monitoring the signal of transaction          74] wr_en=0 rd_en=1 addr=0000 wr_data=11111111
+# PASS; din is 11111111 ,expected was 01011100, actual was 01011100
+# [received the current transaction          74] wr_en=0 rd_en=0 addr=1101 wr_data=00010101
+# [monitoring the signal of transaction          75] wr_en=1 rd_en=0 addr=1000 wr_data=11011111
+# [model updated: wrote 223 to addr 8] wr_en=1 rd_en=0 addr=1000 wr_data=11011111
+# [received the current transaction          75] wr_en=0 rd_en=1 addr=0100 wr_data=00001110
+# [monitoring the signal of transaction          76] wr_en=0 rd_en=0 addr=1101 wr_data=00010101
+# no operation founded
+# [received the current transaction          76] wr_en=0 rd_en=0 addr=1110 wr_data=11001011
+# [monitoring the signal of transaction          77] wr_en=0 rd_en=1 addr=0100 wr_data=00001110
+# PASS; din is 00001110 ,expected was 10100101, actual was 10100101
+# [received the current transaction          77] wr_en=1 rd_en=0 addr=0010 wr_data=11101011
+# [monitoring the signal of transaction          78] wr_en=0 rd_en=0 addr=1110 wr_data=11001011
+# no operation founded
+# [received the current transaction          78] wr_en=1 rd_en=0 addr=0100 wr_data=00101010
+# [monitoring the signal of transaction          79] wr_en=1 rd_en=0 addr=0010 wr_data=11101011
+# [model updated: wrote 235 to addr 2] wr_en=1 rd_en=0 addr=0010 wr_data=11101011
+# [received the current transaction          79] wr_en=0 rd_en=1 addr=1101 wr_data=10011010
+# [monitoring the signal of transaction          80] wr_en=1 rd_en=0 addr=0100 wr_data=00101010
+# [model updated: wrote 42 to addr 4] wr_en=1 rd_en=0 addr=0100 wr_data=00101010
+# [received the current transaction          80] wr_en=0 rd_en=1 addr=0010 wr_data=00110001
+# [monitoring the signal of transaction          81] wr_en=0 rd_en=1 addr=1101 wr_data=10011010
+# PASS; din is 10011010 ,expected was 01000010, actual was 01000010
+# [received the current transaction          81] wr_en=0 rd_en=0 addr=1010 wr_data=11001101
+# [monitoring the signal of transaction          82] wr_en=0 rd_en=1 addr=0010 wr_data=00110001
+# PASS; din is 00110001 ,expected was 11101011, actual was 11101011
+# [received the current transaction          82] wr_en=0 rd_en=1 addr=1110 wr_data=00010111
+# [monitoring the signal of transaction          83] wr_en=0 rd_en=0 addr=1010 wr_data=11001101
+# no operation founded
+# [received the current transaction          83] wr_en=1 rd_en=0 addr=1110 wr_data=01011010
+# [monitoring the signal of transaction          84] wr_en=0 rd_en=1 addr=1110 wr_data=00010111
+# PASS; din is 00010111 ,expected was 10111010, actual was 10111010
+# [received the current transaction          84] wr_en=1 rd_en=0 addr=0011 wr_data=10110100
+# [monitoring the signal of transaction          85] wr_en=1 rd_en=0 addr=1110 wr_data=01011010
+# [model updated: wrote 90 to addr 14] wr_en=1 rd_en=0 addr=1110 wr_data=01011010
+# [received the current transaction          85] wr_en=0 rd_en=0 addr=1110 wr_data=01011100
+# [monitoring the signal of transaction          86] wr_en=1 rd_en=0 addr=0011 wr_data=10110100
+# [model updated: wrote 180 to addr 3] wr_en=1 rd_en=0 addr=0011 wr_data=10110100
+# [received the current transaction          86] wr_en=0 rd_en=1 addr=0000 wr_data=00000100
+# [monitoring the signal of transaction          87] wr_en=0 rd_en=0 addr=1110 wr_data=01011100
+# no operation founded
+# [received the current transaction          87] wr_en=1 rd_en=0 addr=1110 wr_data=11011010
+# [monitoring the signal of transaction          88] wr_en=0 rd_en=1 addr=0000 wr_data=00000100
+# PASS; din is 00000100 ,expected was 01011100, actual was 01011100
+# [received the current transaction          88] wr_en=0 rd_en=0 addr=1110 wr_data=00100110
+# [monitoring the signal of transaction          89] wr_en=1 rd_en=0 addr=1110 wr_data=11011010
+# [model updated: wrote 218 to addr 14] wr_en=1 rd_en=0 addr=1110 wr_data=11011010
+# [received the current transaction          89] wr_en=0 rd_en=1 addr=0000 wr_data=10000101
+# [monitoring the signal of transaction          90] wr_en=0 rd_en=0 addr=1110 wr_data=00100110
+# no operation founded
+# [received the current transaction          90] wr_en=0 rd_en=1 addr=0001 wr_data=10000010
+# [monitoring the signal of transaction          91] wr_en=0 rd_en=1 addr=0000 wr_data=10000101
+# PASS; din is 10000101 ,expected was 01011100, actual was 01011100
+# [received the current transaction          91] wr_en=0 rd_en=0 addr=0100 wr_data=00011011
+# [monitoring the signal of transaction          92] wr_en=0 rd_en=1 addr=0001 wr_data=10000010
+# PASS; din is 10000010 ,expected was 10011100, actual was 10011100
+# [received the current transaction          92] wr_en=0 rd_en=1 addr=1011 wr_data=01101001
+# [monitoring the signal of transaction          93] wr_en=0 rd_en=0 addr=0100 wr_data=00011011
+# no operation founded
+# [received the current transaction          93] wr_en=0 rd_en=1 addr=0001 wr_data=00100001
+# [monitoring the signal of transaction          94] wr_en=0 rd_en=1 addr=1011 wr_data=01101001
+# PASS; din is 01101001 ,expected was 10100111, actual was 10100111
+# [received the current transaction          94] wr_en=0 rd_en=1 addr=0110 wr_data=00100100
+# [monitoring the signal of transaction          95] wr_en=0 rd_en=1 addr=0001 wr_data=00100001
+# PASS; din is 00100001 ,expected was 10011100, actual was 10011100
+# [received the current transaction          95] wr_en=0 rd_en=1 addr=0011 wr_data=10011101
+# [monitoring the signal of transaction          96] wr_en=0 rd_en=1 addr=0110 wr_data=00100100
+# PASS; din is 00100100 ,expected was 00100001, actual was 00100001
+# [received the current transaction          96] wr_en=0 rd_en=1 addr=0101 wr_data=01110111
+# [monitoring the signal of transaction          97] wr_en=0 rd_en=1 addr=0011 wr_data=10011101
+# PASS; din is 10011101 ,expected was 10110100, actual was 10110100
+# [received the current transaction          97] wr_en=0 rd_en=1 addr=1111 wr_data=00111010
+# [monitoring the signal of transaction          98] wr_en=0 rd_en=1 addr=0101 wr_data=01110111
+# PASS; din is 01110111 ,expected was 00000000, actual was 00000000
+# [received the current transaction          98] wr_en=1 rd_en=0 addr=0001 wr_data=01000100
+# [monitoring the signal of transaction          99] wr_en=0 rd_en=1 addr=1111 wr_data=00111010
+# PASS; din is 00111010 ,expected was 11011011, actual was 11011011
+# [received the current transaction          99] wr_en=0 rd_en=0 addr=1000 wr_data=00100010
+# [monitoring the signal of transaction         100] wr_en=1 rd_en=0 addr=0001 wr_data=01000100
+# [model updated: wrote 68 to addr 1] wr_en=1 rd_en=0 addr=0001 wr_data=01000100
+# [monitoring the signal of transaction         101] wr_en=0 rd_en=0 addr=1000 wr_data=00100010
+# no operation founded
+# [monitoring the signal of transaction         102] wr_en=0 rd_en=0 addr=1000 wr_data=00100010
+# no operation founded
+# [monitoring the signal of transaction         103] wr_en=0 rd_en=0 addr=1000 wr_data=00100010
+# no operation founded
+# [monitoring the signal of transaction         104] wr_en=0 rd_en=0 addr=1000 wr_data=00100010
+# no operation founded
+# Functional coverage = 96.35%
+# ** Note: $finish    : C:/questasim64_10.7c/examples/work/FIFO PROJECT/testbench_ram.sv(34)
+#    Time: 1085 ns  Iteration: 0  Instance: /top
+# 1
+# Break at C:/questasim64_10.7c/examples/work/FIFO PROJECT/testbench_ram.sv line 34
+#  coverage report -details -output coverage_report.txt
+#  assertion report -recursive -file assertion_report.txt
+#  coverage save ram_cov.ucdb
+#  quit 
+# Causality operation skipped due to absence of debug database file
