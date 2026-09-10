@@ -42,6 +42,12 @@ matching `dout` has actually appeared on the bus.
 - **Functional coverage:** 96.35% (operation type, address, data value, and operation×address cross) — see `reports/coverage_report.txt`
 - Full run transcript in `reports/sim.log`
 
+## Waveform
+
+Write to addr 5 followed by a matching read (confirms correct 1-cycle read latency):
+
+![RAM read/write waveform](waveform/image.png)
+
 ## Running it
 
 ```
